@@ -1250,7 +1250,7 @@ und-Hans-AQ ;	zh-Hans-AQ ;	zh-AQ ;
 und-Hans-CN ;	zh-Hans-CN ;	zh ;	
 und-Hans-HK ;	zh-Hans-HK ;	 ;	
 und-Hans-MO ;	zh-Hans-MO ;	 ;	
-und-Hans-MY ;	zh-Hans-MY ;	zh-MY ;	
+und-Hans-MY ;	zh-Hans-MY ;	 ;	
 und-Hans-SG ;	zh-Hans-SG ;	zh-SG ;	
 und-Hans-TW ;	zh-Hans-TW ;	 ;	
 und-Hant ;	zh-Hant-TW ;	zh-Hant ;	zh-TW
@@ -1258,7 +1258,7 @@ und-Hant-AQ ;	zh-Hant-AQ ;	 ;
 und-Hant-CN ;	yue-Hant-CN ;	 ;	
 und-Hant-HK ;	zh-Hant-HK ;	zh-HK ;	
 und-Hant-MO ;	zh-Hant-MO ;	zh-MO ;	
-und-Hant-MY ;	zh-Hant-MY ;	 ;	
+und-Hant-MY ;	zh-Hant-MY ;	zh-MY ;	
 und-Hant-SG ;	zh-Hant-SG ;	 ;	
 und-Hant-TW ;	zh-Hant-TW ;	zh-Hant ;	zh-TW
 und-Hebr ;	he-Hebr-IL ;	he ;	
@@ -1760,7 +1760,7 @@ zh-HK ;	zh-Hant-HK ;	zh-HK ;
 zh-Hans ;	zh-Hans-CN ;	zh ;	
 zh-Hant ;	zh-Hant-TW ;	zh-Hant ;	zh-TW
 zh-MO ;	zh-Hant-MO ;	zh-MO ;	
-zh-MY ;	zh-Hans-MY ;	zh-MY ;	
+zh-MY ;	zh-Hant-MY ;	zh-MY ;	
 zh-SG ;	zh-Hans-SG ;	zh-SG ;	
 zh-TW ;	zh-Hant-TW ;	zh-Hant ;	zh-TW
 zu ;	zu-Latn-ZA ;	zu ;	

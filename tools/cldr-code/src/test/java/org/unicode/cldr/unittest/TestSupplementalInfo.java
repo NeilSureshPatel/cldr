@@ -1788,6 +1788,27 @@ public class TestSupplementalInfo extends TestFmwkPlus {
                 }
             } else {
                 BasicLanguageData data = scriptInfo.get(Type.primary);
+
+                // Check the primary scripts, if there are multiple make sure there are multiple territories listed
+                if (data != null) {
+                    Set<String> scripts = data.getScripts();
+                    Set<String> territories = data.getTerritories();
+                    
+                    if (scripts.size() > 1) {
+                        if(territories.size() < 2) {
+                            logln(
+                                "Multiple Primary Scripts: "
+                                + baseLanguage
+                                + " has multiple primary scripts scripts ["
+                                + scripts
+                                + "] but is not official in that many territories ["
+                                + territories
+                                + "]");
+                        }
+                    }
+                }
+
+                // Otherwise see if there are secondary scripts listed
                 if (data == null) {
                     data = scriptInfo.get(Type.secondary);
                 }
@@ -2080,7 +2101,7 @@ public class TestSupplementalInfo extends TestFmwkPlus {
                 SUPPLEMENTAL.getLanguageAndTerritoryPopulationData(b ? "zh" : "zh_Hans", "CN");
         PopulationData yueCNData =
                 SUPPLEMENTAL.getLanguageAndTerritoryPopulationData("yue_Hans", "CN");
-        assertTrue("yue*10 < zh", yueCNData.getPopulation() < zhCNData.getPopulation());
+        assertTrue("yue < zh", yueCNData.getPopulation() < zhCNData.getPopulation());
     }
 
     public void Test10765() { //
